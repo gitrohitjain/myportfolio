@@ -3,190 +3,428 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>John Doe - Software Engineer</title>
+    <title>Rohit Jain - Senior AI Engineer</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+    <nav class="top-nav">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <span class="brand-name">Rohit Jain</span>
+                <span class="brand-title">Senior AI Engineer</span>
+            </div>
+            <div class="nav-menu">
+                <a href="#summary" class="nav-link">Summary</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#certifications" class="nav-link">Certifications</a>
+            </div>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
     <div class="container">
         <header class="header">
             <div class="profile-section">
-                <div class="profile-image">
-                    <i class="fas fa-user"></i>
+                <div class="profile-left">
+                    <div class="profile-image">
+                        <img src="rohit-pic.jpg" alt="Rohit Jain" />
+                    </div>
+                    <div class="profile-basic">
+                        <h1>Rohit Jain</h1>
+                        <h2>Senior Artificial Intelligence Engineer</h2>
+                    </div>
                 </div>
-                <div class="profile-info">
-                    <h1>John Doe</h1>
-                    <h2>Senior Software Engineer</h2>
-                    <div class="contact-info">
+                <div class="profile-right">
+                    <div class="contact-grid">
                         <div class="contact-item">
                             <i class="fas fa-envelope"></i>
-                            <span>john.doe@email.com</span>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-phone"></i>
-                            <span>+1 (555) 123-4567</span>
+                            <a href="mailto:career.rohit@yahoo.com">career.rohit@yahoo.com</a>
                         </div>
                         <div class="contact-item">
                             <i class="fas fa-map-marker-alt"></i>
-                            <span>San Francisco, CA</span>
+                            <span>Singapore</span>
                         </div>
                         <div class="contact-item">
                             <i class="fab fa-linkedin"></i>
-                            <a href="https://linkedin.com/in/johndoe" target="_blank">linkedin.com/in/johndoe</a>
+                            <a href="https://linkedin.com/in/rohitjain96" target="_blank">LinkedIn</a>
                         </div>
                         <div class="contact-item">
                             <i class="fab fa-github"></i>
-                            <a href="https://github.com/johndoe" target="_blank">github.com/johndoe</a>
+                            <a href="https://github.com/gitrohitjain" target="_blank">GitHub</a>
                         </div>
                     </div>
+                    <!-- <div class="skills-highlight">
+                        <span class="skill-tag">AI/ML</span>
+                        <span class="skill-tag">Computer Vision</span>
+                        <span class="skill-tag">LLM</span>
+                        <span class="skill-tag">PyTorch</span>
+                        <span class="skill-tag">6+ Years</span>
+                    </div> -->
                 </div>
             </div>
         </header>
 
         <main class="main-content">
-            <section class="section">
+            <section class="section" id="summary">
                 <h3><i class="fas fa-user-circle"></i> Professional Summary</h3>
-                <p>Experienced Software Engineer with 6+ years of expertise in full-stack development, cloud architecture, and team leadership. Proven track record of delivering scalable solutions and mentoring junior developers. Passionate about clean code, modern technologies, and continuous learning.</p>
+                <p>Senior Artificial Intelligence Engineer with <strong>master's degree in AI</strong> and <strong>6+ years experience</strong> in building cutting-edge <strong>Vision AI, Gen AI & language solutions</strong> across diverse industries – Finance, IT, Agritech, Construction & Automobile. Proficient in architecting, developing and deploying <strong>end-to-end ML solutions</strong>. Possesses technical expertise & problem-solving skills to tackle challenging AI problems. <br> <br> <strong>Areas of Interest:</strong> Machine Learning, Deep Learning, Computer Vision, NLP, MLOps, LLM, BigData.</p>
             </section>
 
-            <section class="section">
+            <section class="section" id="experience">
                 <h3><i class="fas fa-briefcase"></i> Work Experience</h3>
                 <div class="experience-item">
                     <div class="experience-header">
-                        <h4>Senior Software Engineer</h4>
-                        <span class="company">TechCorp Inc.</span>
-                        <span class="duration">Jan 2022 - Present</span>
+                        <h4>Senior Data Scientist</h4>
+                        <span class="company">Meinhardt Group</span>
+                        <span class="duration">Jul 2025 - Present</span>
                     </div>
                     <ul>
-                        <li>Led development of microservices architecture serving 2M+ daily users</li>
-                        <li>Reduced application load time by 40% through performance optimization</li>
-                        <li>Mentored 5 junior developers and established code review best practices</li>
-                        <li>Implemented CI/CD pipelines using Docker, Kubernetes, and Jenkins</li>
+                        <li>Built an Agentic RAG application for QnA with technical documents and engineering drawings</li>
+                        <li>Researched, evaluated, and fine-tuned multiple language models on industry-specific datasets to enhance specialized knowledge and domain relevance</li>
+                        <li>Engineered a scalable microservices architecture by containerizing partition, ingestion, and query pipelines with Docker, enabling modular deployment and maintenance</li>
+                        <li>Deployed and managed the application on Kubernetes, achieving high availability, efficient scaling, and streamlined orchestration of all service components</li>
                     </ul>
+                    <div class="project-tech">
+                        <span>LLM</span>
+                        <span>VisionLM</span>
+                        <span>Agentic AI</span>
+                        <span>LangChain</span>
+                        <span>LangGraph</span>
+                        <span>MLOps</span>
+                        <span>Azure</span>
+                    </div>
                 </div>
 
                 <div class="experience-item">
                     <div class="experience-header">
-                        <h4>Software Engineer</h4>
-                        <span class="company">StartupXYZ</span>
-                        <span class="duration">Jun 2020 - Dec 2021</span>
+                        <h4>Senior AI Data Scientist</h4>
+                        <span class="company">Ailytics AI</span>
+                        <span class="duration">Jul 2024 - 2025</span>
                     </div>
                     <ul>
-                        <li>Built RESTful APIs using Node.js and Express.js for e-commerce platform</li>
-                        <li>Developed responsive web applications using React and TypeScript</li>
-                        <li>Integrated payment systems (Stripe, PayPal) processing $1M+ monthly</li>
-                        <li>Collaborated with product team to define technical requirements</li>
+                        <li>Built AI video analytics solution for safety & productivity usecases at worksite. Implement state-of-the-art object detection, tracking, human and facial pose models, to identify, process and flag alerts with <strong>90+% recall & precision</strong></li>
+                        <li>Design & implement image-text-to-text Multimodal Vision LLM to identify & flag safety violations for the non-logic based usecases - by analyzing images against preset user configurable textual inputs</li>
+                        <li>Perform model optimization and quantization to <strong>ONNX, TensorRT, NCNN</strong> to achieve <strong>faster inference</strong></li>
+                        <li>Create end to end ML pipeline using ClearML to maintain and streamline dataset versioning, training, evalution and benchmarking of the models</li>
                     </ul>
+                    <div class="project-tech">
+                        <span>PyTorch</span>
+                        <span>OpenCV</span>
+                        <span>ML Pipeline</span>
+                        <span>LLM</span>
+                        <span>Tracking</span>
+                        <span>Pose</span>
+                        <span>MLOps</span>
+                    </div>
                 </div>
 
                 <div class="experience-item">
                     <div class="experience-header">
-                        <h4>Junior Software Developer</h4>
-                        <span class="company">WebSolutions Ltd.</span>
-                        <span class="duration">Aug 2018 - May 2020</span>
+                        <h4>Artificial Intelligence Specialist</h4>
+                        <span class="company">Vulcan AI Agritech</span>
+                        <span class="duration">Jul 2022 - 2024</span>
                     </div>
                     <ul>
-                        <li>Developed and maintained client websites using HTML, CSS, and JavaScript</li>
-                        <li>Worked on database design and optimization using MySQL and PostgreSQL</li>
-                        <li>Participated in agile development cycles and sprint planning</li>
-                        <li>Fixed bugs and implemented feature requests for existing applications</li>
+                        <li>Design & implement AI for the counting & grading of fruits using image, processed on the edge</li>
+                        <li>Build object detection, tracking, segmentation, classification model across different agritech solutions, with <strong>counting acc. of 99%+, grading acc. of 95%+</strong>, significantly improving quality, reduce manpower</li>
+                        <li>Optimized inference time by quantizing model to <strong>reduce size by 40% & inference speed by 60%</strong></li>
+                        <li>Develop CI/CD pipeline utilizing Docker with Azure Container Registry and Github Actions</li>
+                        <li>Implemented a LLM based chat-platform application for the farmers and stakeholders</li>
+                        <li>Fine-tuned <strong>7-billion parameter LLM model</strong> to domain specific dataset to achieve highly accurate model</li>
+                        <li>Designed patented state-of-the-art Super-Resolution GAN model to generate high-resolution images from low-resolution satellite images</li>
                     </ul>
+                    <div class="project-tech">
+                        <span>SmartGrader</span>
+                        <span>Detection</span>
+                        <span>Tracking</span>
+                        <span>Segmentation</span>
+                        <span>Classification</span>
+                        <span>Tensorflow</span>
+                        <span>Azure</span>
+                        <span>Github Actions</span>
+                        <span>Large Language Model</span>
+                        <span>Generative AI</span>
+                        <span>PEFT</span>
+                        <span>LangChain</span>
+                        <span>HuggingFace</span>
+                        <span>GAN</span>
+                        <span>Remote Sensing</span>
+                        <span>Python</span>
+                        <span>PyTorch</span>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <h4>AI Engineer</h4>
+                        <span class="company">Panasonic R&D Center Singapore</span>
+                        <span class="duration">Jan - June 2022</span>
+                    </div>
+                    <ul>
+                        <li>Built a deep learning model to detect street objects in an image, occluded by raindrops, to flag self-driving mode of an autonomous vehicle on or off, to ensure safety</li>
+                        <li>Used GANs for image de-raining & applied OpenCV image processing techniques to minimize raindrop effect</li>
+                        <li>Implemented Siamese neural network to one-shot verify accuracy of predicted objects at inference</li>
+                        <li>Built a topic-transition & sentiment detection system to study conversation in a meeting-room environment</li>
+                        <li>Built state-of-the-art <strong>Wav2Vec2 based Automatic Speech Recognizer (ASR)</strong> dedicated towards Singaporean English accent</li>
+                    </ul>
+                    <div class="project-tech">
+                        <span>Neural Network</span>
+                        <span>OpenCV</span>
+                        <span>GAN</span>
+                        <span>PyTorch</span>
+                        <span>Video Analytics</span>
+                        <span>Speech Processing</span>
+                        <span>Natural Language Processing</span>
+                        <span>HuggingFace</span>
+                        <span>AWS</span>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <h4>Data Scientist Intern</h4>
+                        <span class="company">Staple AI</span>
+                        <span class="duration">April - July 2021</span>
+                    </div>
+                    <ul>
+                        <li>Built image processing pipelines for document image correction using OpenCV & traditional computer vision techniques</li>
+                        <li>Designed deep learning models for identifying key features within documents; CNNs such as Faster-RCNN, Mask-RCNN</li>
+                        <li>Enhanced algorithms for data extraction from financial documents; Applied NLP techniques to compare extracted data with ground truth</li>
+                        <li>Developed Rest API & deployed scalable dockerized Flask applications on AWS</li>
+                        <li>Independent project handling & direct interaction with multinational bank clients</li>
+                    </ul>
+                    <div class="project-tech">
+                        <span>OpenCV</span>
+                        <span>Feature Detection</span>
+                        <span>NLP</span>
+                        <span>Flask</span>
+                        <span>Docker</span>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <h4>Data Scientist</h4>
+                        <span class="company">Hewlett Packard Enterprise R&D</span>
+                        <span class="duration">2018 - 2021</span>
+                    </div>
+                    <ul>
+                        <li>Designed, modelled and maintained an AI-powered prediction engine to prevent and auto-resolve problems like availability, performance, security, capacity across infrastructure stack</li>
+                        <li>Built, automated and managed machine learning pipeline with HPE Ezmeral to perform data ingestion, cleaning, feature engineering, model training and deployment tasks</li>
+                        <li>Proposed new data collection points & developed interface to fetch sensor data</li>
+                    </ul>
+                    <div class="project-tech">
+                        <span>Linear Regression</span>
+                        <span>Decision Trees</span>
+                        <span>Boosting</span>
+                        <span>ML Ops</span>
+                    </div>
                 </div>
             </section>
 
-            <section class="section">
+            <section class="section" id="education">
                 <h3><i class="fas fa-graduation-cap"></i> Education</h3>
                 <div class="education-item">
-                    <h4>Bachelor of Science in Computer Science</h4>
-                    <span class="school">University of California, Berkeley</span>
-                    <span class="graduation">Graduated: May 2018</span>
-                    <p>Relevant Coursework: Data Structures, Algorithms, Database Systems, Software Engineering</p>
+                    <h4>Master in Computer Science - Artificial Intelligence specialization</h4>
+                    <span class="school">National University of Singapore</span>
+                    <span class="graduation">2021 - 2022</span>
+                    <p><strong>CAP: 4.45/5</strong></p>
+                </div>
+                <div class="education-item">
+                    <h4>Bachelor of Technology - Electrical & Computer engineering</h4>
+                    <span class="school">Manipal University</span>
+                    <span class="graduation">2014 - 2018</span>
+                    <p><strong>CGPA: 9.36/10</strong></p>
                 </div>
             </section>
 
-            <section class="section">
+            <section class="section" id="skills">
                 <h3><i class="fas fa-code"></i> Technical Skills</h3>
                 <div class="skills-grid">
                     <div class="skill-category">
                         <h4>Programming Languages</h4>
                         <div class="skills-list">
-                            <span class="skill">JavaScript</span>
-                            <span class="skill">TypeScript</span>
                             <span class="skill">Python</span>
-                            <span class="skill">Java</span>
-                            <span class="skill">Go</span>
+                            <span class="skill">C++</span>
+                            <span class="skill">JavaScript</span>
+                            <span class="skill">HTML</span>
+                            <span class="skill">CSS</span>
                         </div>
                     </div>
                     <div class="skill-category">
-                        <h4>Frontend Technologies</h4>
+                        <h4>AI/ML Libraries</h4>
                         <div class="skills-list">
-                            <span class="skill">React</span>
-                            <span class="skill">Vue.js</span>
-                            <span class="skill">HTML5</span>
-                            <span class="skill">CSS3</span>
-                            <span class="skill">Sass</span>
+                            <span class="skill">PyTorch</span>
+                            <span class="skill">TensorFlow</span>
+                            <span class="skill">Keras</span>
+                            <span class="skill">OpenCV</span>
+                            <span class="skill">LangChain</span>
+                            <span class="skill">LangGraph</span>
+                            <span class="skill">Transformers</span>
                         </div>
                     </div>
                     <div class="skill-category">
-                        <h4>Backend Technologies</h4>
+                        <h4>Tools & Frameworks</h4>
                         <div class="skills-list">
-                            <span class="skill">Node.js</span>
-                            <span class="skill">Express.js</span>
-                            <span class="skill">Django</span>
-                            <span class="skill">Spring Boot</span>
-                            <span class="skill">GraphQL</span>
+                            <span class="skill">Docker</span>
+                            <span class="skill">Kubernetes</span>
+                            <span class="skill">ClearML</span>
+                            <span class="skill">MLFlow</span>
+                            <span class="skill">Flask</span>
+                            <span class="skill">Git</span>
+                            <span class="skill">GitHub</span>
                         </div>
                     </div>
                     <div class="skill-category">
                         <h4>Databases & Cloud</h4>
                         <div class="skills-list">
+                            <span class="skill">MySQL</span>
                             <span class="skill">PostgreSQL</span>
                             <span class="skill">MongoDB</span>
-                            <span class="skill">Redis</span>
                             <span class="skill">AWS</span>
-                            <span class="skill">Docker</span>
+                            <span class="skill">Azure</span>
+                            <span class="skill">Tableau</span>
+                            <span class="skill">Spark</span>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section class="section">
+            <section class="section" id="projects">
                 <h3><i class="fas fa-trophy"></i> Projects</h3>
                 <div class="project-item">
-                    <h4>E-commerce Platform</h4>
-                    <p>Full-stack web application with React frontend and Node.js backend. Features include user authentication, product catalog, shopping cart, and payment integration.</p>
+                    <h4>Video Visual Relationship - Video Captioning</h4>
+                    <p>Designed a seq2seq architecture to identify object-relationship pairs in a video with <strong>top-5 accuracy of 75%</strong>. Extracted and sequenced features from video frames using <strong>InceptionV4 and ResNet128 CNN models</strong>. Modelled bi-directional multi-stacked RNN decoder to unroll caption.</p>
                     <div class="project-tech">
-                        <span>React</span>
-                        <span>Node.js</span>
-                        <span>PostgreSQL</span>
-                        <span>Stripe API</span>
+                        <span>CNN</span>
+                        <span>RNN</span>
+                        <span>InceptionV4</span>
+                        <span>ResNet128</span>
                     </div>
                 </div>
                 <div class="project-item">
-                    <h4>Task Management API</h4>
-                    <p>RESTful API for task management with user authentication, real-time notifications, and team collaboration features. Deployed on AWS with CI/CD pipeline.</p>
+                    <h4>Question-Answering on Stanford SQUAD v2.0</h4>
+                    <p>Built a transformer based system to answer questions from Wikipedia reading comprehensions. Explored architectures like <strong>BERT, ALBERT, ELECTRA, RoBERTa, XLNet</strong> as base model for QA system. Achieved <strong>top 35 rank on world leaderboard with F1 score of 87.18</strong> using a custom finetuned RoBERTA-large.</p>
                     <div class="project-tech">
-                        <span>Python</span>
-                        <span>Django</span>
-                        <span>WebSocket</span>
-                        <span>AWS</span>
+                        <span>BERT</span>
+                        <span>RoBERTa</span>
+                        <span>Transformers</span>
+                        <span>NLP</span>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <h4>Live Face Mask Detection</h4>
+                    <p>Built a <strong>98% accurate face-mask detector</strong> to detect masks of any given pattern & colour in <strong>real-time</strong>. Used transfer learning to implement <strong>MobileNet v2 model</strong> on an extracted face to classify for mask vs no-mask.</p>
+                    <div class="project-tech">
+                        <span>MobileNet v2</span>
+                        <span>Transfer Learning</span>
+                        <span>OpenCV</span>
+                        <span>Computer Vision</span>
                     </div>
                 </div>
             </section>
 
-            <section class="section">
+            <section class="section" id="certifications">
                 <h3><i class="fas fa-certificate"></i> Certifications</h3>
                 <div class="certification-item">
-                    <h4>AWS Certified Solutions Architect - Associate</h4>
-                    <span class="cert-date">Issued: March 2023</span>
+                    <h4>Deep Learning Specialization</h4>
+                    <span class="cert-date">deeplearning.ai</span>
                 </div>
                 <div class="certification-item">
-                    <h4>Google Cloud Professional Developer</h4>
-                    <span class="cert-date">Issued: November 2022</span>
+                    <h4>Machine learning in Production</h4>
+                    <span class="cert-date">deeplearning.ai</span>
+                </div>
+                <div class="certification-item">
+                    <h4>Deep Learning with Pytorch</h4>
+                    <span class="cert-date">FreeCodeCamp.org</span>
+                </div>
+                <div class="certification-item">
+                    <h4>Python for Data Science, AI development</h4>
+                    <span class="cert-date">IBM</span>
                 </div>
             </section>
         </main>
     </div>
+    <script>
+        // Mobile navigation toggle
+        const navToggle = document.querySelector('.nav-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            navToggle.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking on a link
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                navToggle.classList.remove('active');
+            });
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add scroll effect to navigation
+        let lastScrollTop = 0;
+        const nav = document.querySelector('.top-nav');
+        
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            
+            if (scrollTop > lastScrollTop && scrollTop > 100) {
+                // Scrolling down
+                nav.style.transform = 'translateY(-100%)';
+            } else {
+                // Scrolling up
+                nav.style.transform = 'translateY(0)';
+            }
+            
+            lastScrollTop = scrollTop;
+        });
+
+        // Add active navigation highlighting
+        const sections = document.querySelectorAll('section[id]');
+        const navLinksList = document.querySelectorAll('.nav-link');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinksList.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
