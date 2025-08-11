@@ -453,6 +453,29 @@ body {
     font-size: 1.1rem;
 }
 
+.company a {
+    color: #60a5fa;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.company a:hover {
+    color: #3b82f6;
+    text-decoration: underline;
+}
+
+.github-link {
+    color: #94a3b8;
+    margin-left: 10px;
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.github-link:hover {
+    color: #f8fafc;
+}
+
 .duration {
     color: #e2e8f0;
     font-size: 0.9rem;
