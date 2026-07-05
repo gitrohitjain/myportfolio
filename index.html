@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rohit Jain — Senior AI Engineer</title>
+    <meta name="description" content="Rohit Jain — Senior Artificial Intelligence Engineer in Singapore. 7+ years building production-grade Generative AI, RAG, Computer Vision, NLP and multimodal systems.">
+    <meta name="author" content="Rohit Jain">
+    <meta property="og:title" content="Rohit Jain — Senior AI Engineer">
+    <meta property="og:description" content="7+ years building production-grade Generative AI, RAG, Computer Vision, NLP and multimodal systems.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="rohit-pic.png">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b1020'/%3E%3Ctext x='32' y='43' font-family='Arial,sans-serif' font-weight='700' font-size='28' fill='%236d9eff' text-anchor='middle'%3ERJ%3C/text%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        // Set theme before paint to avoid flash
+        (function () {
+            var saved = localStorage.getItem('theme');
+            var theme = saved || (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+            document.documentElement.setAttribute('data-theme', theme);
+        })();
+    </script>
+</head>
+<body>
+
+    <!-- ============ SVG icon sprite ============ -->
+    <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+        <symbol id="i-mail" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></symbol>
+        <symbol id="i-github" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></symbol>
+        <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></symbol>
+        <symbol id="i-file" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></symbol>
+        <symbol id="i-pin" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+        <symbol id="i-link" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></symbol>
+        <symbol id="i-award" viewBox="0 0 24 24"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></symbol>
+        <symbol id="i-cap" viewBox="0 0 24 24"><path d="M22 10L12 5 2 10l10 5 10-5z"/><path d="M6 12v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5"/></symbol>
+        <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></symbol>
+        <symbol id="i-moon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></symbol>
+    </svg>
+
+    <!-- ============ NAV ============ -->
+    <nav class="nav" id="nav">
+        <div class="nav-inner">
+            <a href="#top" class="brand">Rohit<span>Jain</span></a>
+            <div class="nav-links" id="navLinks">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#awards" class="nav-link">Awards</a>
+            </div>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle color theme">
+                    <svg class="icon icon-sun" aria-hidden="true"><use href="#i-sun"/></svg>
+                    <svg class="icon icon-moon" aria-hidden="true"><use href="#i-moon"/></svg>
+                </button>
+                <button class="nav-burger" id="navBurger" aria-label="Open menu" aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ============ HERO ============ -->
+    <header class="hero" id="top">
+        <div class="hero-glow" aria-hidden="true"></div>
+        <div class="wrap hero-inner">
+            <div class="hero-text">
+                <p class="eyebrow">Based in Singapore · Open to interesting problems</p>
+                <h1>Rohit Jain</h1>
+                <h2 class="role">Senior <span class="grad-text">Artificial Intelligence</span> Engineer</h2>
+                <p class="tagline">
+                    I build production-grade <strong>Generative AI</strong>, <strong>Computer Vision</strong>, and
+                    <strong>multimodal</strong> systems — from research and model training to containerized
+                    microservices running on cloud infrastructure.
+                </p>
+                <div class="hero-cta">
+                    <a class="btn btn-primary" href="mailto:career.rohit@yahoo.com">
+                        <svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>Get in touch
+                    </a>
+                    <a class="btn btn-ghost" href="https://www.linkedin.com/in/rohitjain96/" target="_blank" rel="noopener">
+                        <svg class="icon" aria-hidden="true"><use href="#i-linkedin"/></svg>LinkedIn
+                    </a>
+                    <a class="btn btn-ghost" href="https://github.com/gitrohitjain" target="_blank" rel="noopener">
+                        <svg class="icon" aria-hidden="true"><use href="#i-github"/></svg>GitHub
+                    </a>
+                    <a class="btn btn-ghost" href="https://github.com/gitrohitjain/docs/blob/main/recommendation_letter.pdf" target="_blank" rel="noopener">
+                        <svg class="icon" aria-hidden="true"><use href="#i-file"/></svg>Recommendations
+                    </a>
+                </div>
+            </div>
+            <div class="hero-photo">
+                <div class="photo-ring">
+                    <img src="rohit-pic.png" alt="Portrait of Rohit Jain" width="280" height="280">
+                </div>
+            </div>
+        </div>
+        <div class="wrap stats reveal">
+            <div class="stat"><span class="stat-num">7+</span><span class="stat-label">Years of experience</span></div>
+            <div class="stat"><span class="stat-num">5</span><span class="stat-label">Industries served</span></div>
+            <div class="stat"><span class="stat-num">Master's in AI</span><span class="stat-label">National University of Singapore</span></div>
+            <div class="stat"><span class="stat-num">95%+</span><span class="stat-label">RAG accuracy in production</span></div>
+        </div>
+    </header>
+
+    <main>
+        <!-- ============ ABOUT ============ -->
+        <section class="section wrap" id="about">
+            <h3 class="section-title"><span class="section-kicker">01</span>About</h3>
+            <div class="about-card reveal">
+                <p>
+                    <strong>Senior Artificial Intelligence Engineer</strong> with a master's degree in AI from the
+                    National University of Singapore and <strong>7 years of experience</strong> building production-grade
+                    Generative AI, Computer Vision, NLP, and multimodal solutions across the <em>Finance</em>,
+                    <em>IT</em>, <em>Agritech</em>, <em>Construction</em>, and <em>Automotive</em> industries.
+                </p>
+                <p>
+                    Skilled in architecting, developing, and deploying end-to-end ML systems — from research and
+                    model training to containerized microservices on cloud infrastructure.
+                </p>
+            </div>
+        </section>
+
+        <!-- ============ EXPERIENCE ============ -->
+        <section class="section wrap" id="experience">
+            <h3 class="section-title"><span class="section-kicker">02</span>Experience</h3>
+            <div class="timeline">
+
+                <article class="tl-item reveal">
+                    <div class="tl-dot" aria-hidden="true"></div>
+                    <div class="card">
+                        <header class="card-head">
+                            <div>
+                                <h4>Senior Data Scientist</h4>
+                                <a class="company" href="https://meinhardtgroup.com/offices/singapore/" target="_blank" rel="noopener">Meinhardt Group<svg class="icon icon-xs" aria-hidden="true"><use href="#i-link"/></svg></a>
+                            </div>
+                            <div class="card-meta">
+                                <span class="badge badge-current">2025 — Present</span>
+                                <span class="loc"><svg class="icon icon-xs" aria-hidden="true"><use href="#i-pin"/></svg>Singapore</span>
+                            </div>
+                        </header>
+                        <div class="chips">
+                            <span>Multimodal</span><span>Agentic RAG</span><span>Graph RAG</span><span>RAGAS</span><span>LangGraph</span><span>MLOps</span><span>Azure</span>
+                        </div>
+                        <ul class="bullets">
+                            <li>Developed a <strong>Multimodal Agentic RAG</strong> system for Q&amp;A over technical documents and engineering drawings, iterating from vector RAG to Graph RAG to resolve accuracy degradation on complex, relational queries — improving <strong>multi-hop query accuracy by 35%+</strong> over baseline vector retrieval.</li>
+                            <li>Designed a <strong>Graph RAG pipeline</strong> that extracts entities, relationships, and key claims from engineering documents into a knowledge graph, enabling multi-hop reasoning across interconnected concepts and <strong>reducing hallucination by 40%+</strong> by overcoming the structural context loss of chunk-based vector retrieval.</li>
+                            <li>Implemented <strong>hierarchical, structure-aware chunking</strong> to preserve tables and cross-references in engineering documents, replacing fixed-token splitting and cutting context-fragmentation retrieval errors by <strong>30%+</strong>.</li>
+                            <li>Benchmarked RAG pipeline quality using <strong>RAGAS</strong> (faithfulness, context precision, context recall, answer relevancy), achieving <strong>95%+ accuracy, 99%+ consistency, and &lt;5% hallucination rate</strong> across production evaluation sets.</li>
+                            <li>Engineered a <strong>scalable microservices architecture</strong>, containerizing ingestion, partitioning, and query pipelines with Docker into 10+ independently deployable services.</li>
+                            <li>Deployed and orchestrated the application on a <strong>self-managed Kubernetes</strong> cluster, ensuring <strong>99.9%+ uptime</strong> and efficient auto-scaling under variable load (100+ concurrent requests).</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="tl-item reveal">
+                    <div class="tl-dot" aria-hidden="true"></div>
+                    <div class="card">
+                        <header class="card-head">
+                            <div>
+                                <h4>Senior AI Data Scientist</h4>
+                                <a class="company" href="https://ailytics.ai/" target="_blank" rel="noopener">Ailytics AI<svg class="icon icon-xs" aria-hidden="true"><use href="#i-link"/></svg></a>
+                            </div>
+                            <div class="card-meta">
+                                <span class="badge">2024 — 2025</span>
+                                <span class="loc"><svg class="icon icon-xs" aria-hidden="true"><use href="#i-pin"/></svg>Singapore</span>
+                            </div>
+                        </header>
+                        <div class="chips">
+                            <span>PyTorch</span><span>OpenCV</span><span>ML Pipeline</span><span>Vision LLM</span><span>Tracking</span><span>Pose Estimation</span><span>MLOps</span>
+                        </div>
+                        <ul class="bullets">
+                            <li>Built an <strong>AI video-analytics</strong> solution for worksite safety and productivity, implementing state-of-the-art object detection, multi-object tracking, and human/facial pose-estimation models with <strong>90%+ precision and recall</strong>.</li>
+                            <li>Designed and deployed a <strong>Multimodal Vision LLM</strong> (image-text-to-text) that flags safety violations in non-rule-based scenarios by analyzing images against user-configurable textual prompts.</li>
+                            <li>Accelerated inference through <strong>model optimization and quantization</strong> to ONNX, TensorRT, and NCNN formats.</li>
+                            <li>Created an <strong>end-to-end ML pipeline</strong> in ClearML covering dataset versioning, model training, evaluation, and benchmarking.</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="tl-item reveal">
+                    <div class="tl-dot" aria-hidden="true"></div>
+                    <div class="card">
+                        <header class="card-head">
+                            <div>
+                                <h4>Artificial Intelligence Specialist</h4>
+                                <a class="company" href="https://www.linkedin.com/company/vulcan-agritech/" target="_blank" rel="noopener">Vulcan AI Agritech<svg class="icon icon-xs" aria-hidden="true"><use href="#i-link"/></svg></a>
+                            </div>
+                            <div class="card-meta">
+                                <span class="badge">2022 — 2024</span>
+                                <span class="loc"><svg class="icon icon-xs" aria-hidden="true"><use href="#i-pin"/></svg>Singapore</span>
+                            </div>
+                        </header>
+
+                        <div class="subproject">
+                            <h5>SmartGrader</h5>
+                            <div class="chips">
+                                <span>Detection</span><span>Tracking</span><span>Segmentation</span><span>Classification</span><span>TensorFlow</span><span>Azure</span><span>GitHub Actions</span>
+                            </div>
+                            <ul class="bullets">
+                                <li>Designed and implemented edge-deployed AI for automated <strong>fruit counting and grading</strong> using computer vision.</li>
+                                <li>Built object detection, tracking, segmentation, and classification models across agritech solutions, achieving <strong>99%+ counting accuracy</strong> and <strong>95%+ grading accuracy</strong> while significantly reducing manual labor.</li>
+                                <li>Optimized inference through model quantization, cutting model size by <strong>40%</strong> and improving inference speed by <strong>60%</strong>.</li>
+                                <li>Developed a <strong>CI/CD pipeline</strong> using Docker, Azure Container Registry, and GitHub Actions.</li>
+                            </ul>
+                        </div>
+
+                        <div class="subproject">
+                            <h5>Chat with Fruit Doctor</h5>
+                            <div class="chips">
+                                <span>LLMs</span><span>Generative AI</span><span>PEFT</span><span>LangChain</span><span>HuggingFace</span>
+                            </div>
+                            <ul class="bullets">
+                                <li>Implemented an <strong>LLM-based chat platform</strong> enabling farmers and stakeholders to query information on fruit health, growth, and nutrition.</li>
+                                <li>Fine-tuned a <strong>7B-parameter LLM</strong> on a domain-specific dataset, achieving high accuracy on agricultural Q&amp;A.</li>
+                                <li>Curated a <strong>10K-sample fine-tuning dataset</strong> compiled from domain experts and government guidelines.</li>
+                                <li>Improved answer quality by incorporating <strong>Retrieval-Augmented Generation (RAG)</strong> over 100+ research papers.</li>
+                            </ul>
+                        </div>
+
+                        <div class="subproject">
+                            <h5>Super Resolution of Satellite Images</h5>
+                            <div class="chips">
+                                <span>GAN</span><span>Generative AI</span><span>Remote Sensing</span><span>Python</span><span>PyTorch</span>
+                            </div>
+                            <ul class="bullets">
+                                <li>Designed a <strong>patented Super-Resolution GAN</strong> that generates high-resolution (HR) crop imagery from low-resolution satellite images, achieving <strong>5× upscaling</strong>.</li>
+                                <li>Reduced annual HR-imagery acquisition <strong>cost by 12×</strong> and improved crop health and nutrient prediction <strong>performance by 50%</strong> using the generated HR images.</li>
+                                <li>Improved output quality by designing a <strong>custom loss function</strong> with perceptual (feature) loss, optimizing for visual similarity over pixel-space metrics.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="tl-item reveal">
+                    <div class="tl-dot" aria-hidden="true"></div>
+                    <div class="card">
+                        <header class="card-head">
+                            <div>
+                                <h4>AI Engineer <span class="muted">(part-time, during master's)</span></h4>
+                                <a class="company" href="https://research.sg.panasonic.com/" target="_blank" rel="noopener">Panasonic R&amp;D Center Singapore<svg class="icon icon-xs" aria-hidden="true"><use href="#i-link"/></svg></a>
+                            </div>
+                            <div class="card-meta">
+                                <span class="badge">Jan — Jun 2022</span>
+                                <span class="loc"><svg class="icon icon-xs" aria-hidden="true"><use href="#i-pin"/></svg>Singapore</span>
+                            </div>
+                        </header>
+
+                        <div class="subproject">
+                            <h5>Autonomous Vehicle Vision</h5>
+                            <div class="chips">
+                                <span>Neural Networks</span><span>OpenCV</span><span>GAN</span><span>PyTorch</span><span>Video Analytics</span>
+                            </div>
+                            <ul class="bullets">
+                                <li>Built a deep learning model to detect street objects occluded by raindrops, enabling safety-critical toggling of autonomous vehicle (AV) self-driving mode.</li>
+                                <li>Applied <strong>GANs for image de-raining</strong> alongside OpenCV image-processing techniques to minimize raindrop occlusion across varying sizes, shapes, and intensities.</li>
+                                <li>Implemented a <strong>Siamese neural network</strong> for one-shot verification of predicted objects at inference.</li>
+                            </ul>
+                        </div>
+
+                        <div class="subproject">
+                            <h5>Topic Transition System</h5>
+                            <div class="chips">
+                                <span>Speech Processing</span><span>NLP</span><span>HuggingFace</span><span>AWS</span>
+                            </div>
+                            <ul class="bullets">
+                                <li>Built a topic-transition and sentiment-detection system for analyzing conversations in a meeting-room environment.</li>
+                                <li>Developed a state-of-the-art <strong>Wav2Vec2-based Automatic Speech Recognizer (ASR)</strong> dedicated to the Singaporean English accent.</li>
+                                <li>Achieved a <strong>5.9% word error rate (WER)</strong> on the <a href="https://www.imda.gov.sg/programme-listing/digital-services-lab/national-speech-corpus" target="_blank" rel="noopener">NSC</a> dataset, outperforming the leaderboard Wav2Vec2 baseline.</li>
+                                <li>Applied NLP techniques to ASR-transcribed text to design the topic-transition detection model.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="tl-item reveal">
+                    <div class="tl-dot" aria-hidden="true"></div>
+                    <div class="card">
+                        <header class="card-head">
+                            <div>
+                                <h4>Data Scientist Intern</h4>
+                                <a class="company" href="https://staple.io" target="_blank" rel="noopener">Staple AI<svg class="icon icon-xs" aria-hidden="true"><use href="#i-link"/></svg></a>
+                            </div>
+                            <div class="card-meta">
+                                <span class="badge">Apr — Jul 2021</span>
+                                <span class="loc"><svg class="icon icon-xs" aria-hidden="true"><use href="#i-pin"/></svg>Singapore</span>
+                            </div>
+                        </header>
+                        <div class="chips">
+                            <span>OpenCV</span><span>Feature Detection</span><span>NLP</span><span>Flask</span><span>Docker</span>
+                        </div>
+                        <ul class="bullets">
+                            <li>Built image-processing pipelines for document image correction using OpenCV and traditional computer vision techniques.</li>
+                            <li>Designed deep learning models to identify key features within documents using CNNs such as <em>Faster-RCNN</em> and <em>Mask-RCNN</em>.</li>
+                            <li>Enhanced data-extraction algorithms for financial documents; applied NLP techniques to compare extracted data against ground truth and visualized results with Plotly.</li>
+                            <li>Developed REST APIs and deployed scalable, dockerized Flask applications on AWS.</li>
+                            <li>Managed independent projects with direct client engagement across multinational banks.</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="tl-item reveal">
+                    <div class="tl-dot" aria-hidden="true"></div>
+                    <div class="card">
+                        <header class="card-head">
+                            <div>
+                                <h4>Data Scientist</h4>
+                                <a class="company" href="https://www.hpe.com" target="_blank" rel="noopener">Hewlett Packard Enterprise R&amp;D<svg class="icon icon-xs" aria-hidden="true"><use href="#i-link"/></svg></a>
+                            </div>
+                            <div class="card-meta">
+                                <span class="badge">2018 — 2021</span>
+                                <span class="loc"><svg class="icon icon-xs" aria-hidden="true"><use href="#i-pin"/></svg>Bangalore, India</span>
+                            </div>
+                        </header>
+                        <div class="chips">
+                            <span>Linear Regression</span><span>Decision Trees</span><span>Boosting</span><span>MLOps</span>
+                        </div>
+                        <ul class="bullets">
+                            <li>Designed, modelled, and maintained an <strong>AI-powered prediction engine</strong> that proactively detects and auto-resolves infrastructure issues spanning <em>availability</em>, <em>performance</em>, <em>security</em>, and <em>capacity</em>.</li>
+                            <li>Built and automated an <strong>end-to-end ML pipeline</strong> on HPE <em>Ezmeral</em> for data ingestion, cleaning, feature engineering, model training, and deployment.</li>
+                            <li>Proposed new data-collection points and developed interfaces to ingest sensor data.</li>
+                        </ul>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- ============ SKILLS ============ -->
+        <section class="section wrap" id="skills">
+            <h3 class="section-title"><span class="section-kicker">03</span>Skills</h3>
+            <div class="skills-grid">
+                <div class="skill-group reveal">
+                    <h4>Areas of Expertise</h4>
+                    <div class="chips chips-lg">
+                        <span>Generative AI</span><span>Large Language Models (LLMs)</span><span>Retrieval-Augmented Generation (RAG)</span><span>AI Agents</span><span>Prompt Engineering</span><span>Fine-tuning</span><span>Embeddings</span><span>Machine Learning</span><span>Deep Learning</span><span>Computer Vision</span><span>Natural Language Processing</span><span>MLOps / LLMOps</span>
+                    </div>
+                </div>
+                <div class="skill-group reveal">
+                    <h4>Languages &amp; Databases</h4>
+                    <div class="chips chips-lg">
+                        <span>Python</span><span>PostgreSQL</span><span>MongoDB</span><span>Vector Databases</span>
+                    </div>
+                </div>
+                <div class="skill-group reveal">
+                    <h4>ML Libraries</h4>
+                    <div class="chips chips-lg">
+                        <span>PyTorch</span><span>TensorFlow</span><span>Transformers</span><span>HuggingFace</span><span>SentenceTransformers</span><span>OpenCV</span><span>spaCy</span><span>NLTK</span><span>scikit-learn</span><span>Pandas</span>
+                    </div>
+                </div>
+                <div class="skill-group reveal">
+                    <h4>LLM Frameworks</h4>
+                    <div class="chips chips-lg">
+                        <span>LangChain</span><span>LangGraph</span><span>LlamaIndex</span><span>OpenAI API</span><span>RAG Pipelines</span>
+                    </div>
+                </div>
+                <div class="skill-group reveal">
+                    <h4>Tools &amp; Cloud</h4>
+                    <div class="chips chips-lg">
+                        <span>Docker</span><span>Kubernetes</span><span>MLflow</span><span>ClearML</span><span>Flask</span><span>FastAPI</span><span>Git</span><span>GitHub</span><span>AWS</span><span>Azure</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ PROJECTS ============ -->
+        <section class="section wrap" id="projects">
+            <h3 class="section-title"><span class="section-kicker">04</span>Projects</h3>
+            <div class="projects-grid">
+                <article class="card project-card reveal">
+                    <h4>Video Visual Relationship — Video Captioning
+                        <a href="https://github.com/gitrohitjain/video-captioning/tree/main/code" target="_blank" rel="noopener" aria-label="Video captioning on GitHub"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg></a>
+                    </h4>
+                    <p>Designed a <em>seq2seq</em> architecture to identify visual object–relationship pairs in video, achieving <strong>75% top-5 accuracy</strong>. Extracted and sequenced video-frame features using <em>InceptionV4</em> and <em>ResNet128</em>; modelled a bidirectional, multi-stacked RNN decoder to generate captions, with model ensembling for accuracy gains.</p>
+                    <div class="chips"><span>CNN</span><span>RNN</span><span>InceptionV4</span><span>ResNet128</span></div>
+                </article>
+                <article class="card project-card reveal">
+                    <h4>Question Answering on Stanford SQuAD v2.0
+                        <a href="https://github.com/gitrohitjain/question-answering-on-squad" target="_blank" rel="noopener" aria-label="SQuAD QA on GitHub"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg></a>
+                    </h4>
+                    <p>Built a transformer-based system to answer questions from Wikipedia reading comprehensions, exploring BERT, ALBERT, ELECTRA, RoBERTa, and XLNet. Achieved a <strong>top-35 global leaderboard rank</strong> with an <strong>F1 score of 87.18</strong> using a custom fine-tuned RoBERTa-large.</p>
+                    <div class="chips"><span>BERT</span><span>RoBERTa</span><span>Transformers</span><span>NLP</span></div>
+                </article>
+                <article class="card project-card reveal">
+                    <h4>Live Face Mask Detection
+                        <a href="https://github.com/gitrohitjain/mask-detector" target="_blank" rel="noopener" aria-label="Mask detector on GitHub"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg></a>
+                    </h4>
+                    <p>Built a <strong>98%-accurate</strong> real-time face-mask detector that handles masks of any pattern and colour, applying transfer learning with <em>MobileNet v2</em> on extracted faces to classify mask vs. no-mask.</p>
+                    <div class="chips"><span>MobileNet v2</span><span>Transfer Learning</span><span>OpenCV</span><span>Computer Vision</span></div>
+                </article>
+            </div>
+        </section>
+
+        <!-- ============ EDUCATION ============ -->
+        <section class="section wrap" id="education">
+            <h3 class="section-title"><span class="section-kicker">05</span>Education</h3>
+            <div class="edu-grid">
+                <article class="card edu-card reveal">
+                    <svg class="icon icon-lg edu-icon" aria-hidden="true"><use href="#i-cap"/></svg>
+                    <h4>National University of Singapore</h4>
+                    <p class="edu-degree">Master in Computer Science — <span class="grad-text">Artificial Intelligence</span> specialization</p>
+                    <p class="edu-meta"><span class="badge">2021 — 2022</span> <span class="muted">CAP 4.45 / 5 · Singapore</span></p>
+                </article>
+                <article class="card edu-card reveal">
+                    <svg class="icon icon-lg edu-icon" aria-hidden="true"><use href="#i-cap"/></svg>
+                    <h4>Manipal University</h4>
+                    <p class="edu-degree">Bachelor of Technology — <span class="grad-text">Electrical &amp; Computer</span> Engineering</p>
+                    <p class="edu-meta"><span class="badge">2014 — 2018</span> <span class="muted">CGPA 9.36 / 10 · Karnataka, India</span></p>
+                </article>
+            </div>
+        </section>
+
+        <!-- ============ AWARDS: CERTIFICATIONS + ACHIEVEMENTS ============ -->
+        <section class="section wrap" id="awards">
+            <h3 class="section-title"><span class="section-kicker">06</span>Certifications &amp; Achievements</h3>
+            <div class="awards-grid">
+                <div class="card reveal">
+                    <h4 class="card-subtitle">Certifications</h4>
+                    <ul class="list-plain">
+                        <li><a href="https://www.coursera.org/account/accomplishments/specialization/certificate/WEE2V36XMEKE" target="_blank" rel="noopener"><strong>Deep Learning Specialization</strong> — deeplearning.ai<svg class="icon icon-xs" aria-hidden="true"><use href="#i-link"/></svg></a></li>
+                        <li><a href="https://www.coursera.org/account/accomplishments/certificate/HGDXYHQD869Q" target="_blank" rel="noopener"><strong>Machine Learning in Production</strong> — deeplearning.ai<svg class="icon icon-xs" aria-hidden="true"><use href="#i-link"/></svg></a></li>
+                        <li><a href="https://jovian.ai/certificate/MFQWCMJXGI" target="_blank" rel="noopener"><strong>Deep Learning with PyTorch</strong> — FreeCodeCamp.org<svg class="icon icon-xs" aria-hidden="true"><use href="#i-link"/></svg></a></li>
+                        <li><a href="https://coursera.org/share/2dc44fc2baf8ce083b59573c8815fbbb" target="_blank" rel="noopener"><strong>Python for Data Science, AI Development</strong> — IBM<svg class="icon icon-xs" aria-hidden="true"><use href="#i-link"/></svg></a></li>
+                    </ul>
+                </div>
+                <div class="card reveal">
+                    <h4 class="card-subtitle">Achievements</h4>
+                    <ul class="list-plain list-award">
+                        <li><svg class="icon" aria-hidden="true"><use href="#i-award"/></svg><span>Received the <strong>HPE Employee Recognition Award</strong> three times for innovation and impact delivered through work.</span></li>
+                        <li><svg class="icon" aria-hidden="true"><use href="#i-award"/></svg><span>Awarded the <strong>Director's Medal for Academic Excellence</strong>, finishing in the top 2% of a class of 190 students.</span></li>
+                        <li><svg class="icon" aria-hidden="true"><use href="#i-award"/></svg><span>Finished in the <strong>top 1%</strong> of all participants in the 10<sup>th</sup> International Mathematical Olympiad (IMO).</span></li>
+                        <li><svg class="icon" aria-hidden="true"><use href="#i-award"/></svg><span>Won <strong>2<sup>nd</sup> prize</strong> in an eye-controlled robotics event at the Indian Institute of Technology (IIT) Madras.</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+        <div class="wrap footer-inner">
+            <p>© <span id="year"></span> Rohit Jain · Built with plain HTML &amp; CSS, hosted on GitHub Pages.</p>
+            <div class="footer-links">
+                <a href="mailto:career.rohit@yahoo.com" aria-label="Email"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg></a>
+                <a href="https://www.linkedin.com/in/rohitjain96/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="icon" aria-hidden="true"><use href="#i-linkedin"/></svg></a>
+                <a href="https://github.com/gitrohitjain" target="_blank" rel="noopener" aria-label="GitHub"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // ---- Theme toggle ----
+        const themeToggle = document.getElementById('themeToggle');
+        themeToggle.addEventListener('click', () => {
+            const next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+            document.documentElement.setAttribute('data-theme', next);
+            localStorage.setItem('theme', next);
+        });
+
+        // ---- Mobile menu ----
+        const burger = document.getElementById('navBurger');
+        const navLinks = document.getElementById('navLinks');
+        burger.addEventListener('click', () => {
+            const open = navLinks.classList.toggle('open');
+            burger.classList.toggle('open', open);
+            burger.setAttribute('aria-expanded', open);
+        });
+        navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+            navLinks.classList.remove('open');
+            burger.classList.remove('open');
+            burger.setAttribute('aria-expanded', 'false');
+        }));
+
+        // ---- Nav shadow on scroll ----
+        const nav = document.getElementById('nav');
+        const onScroll = () => nav.classList.toggle('scrolled', window.scrollY > 8);
+        window.addEventListener('scroll', onScroll, { passive: true });
+        onScroll();
+
+        // ---- Scroll-reveal (respects reduced motion) ----
+        const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        const revealEls = document.querySelectorAll('.reveal');
+        if (reduceMotion || !('IntersectionObserver' in window)) {
+            revealEls.forEach(el => el.classList.add('in'));
+        } else {
+            const io = new IntersectionObserver(entries => {
+                entries.forEach(e => {
+                    if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+                });
+            }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+            revealEls.forEach(el => io.observe(el));
+        }
+
+        // ---- Active section highlighting ----
+        const sections = document.querySelectorAll('section[id]');
+        const linkMap = new Map();
+        document.querySelectorAll('.nav-link').forEach(l => linkMap.set(l.getAttribute('href').slice(1), l));
+        const spy = new IntersectionObserver(entries => {
+            entries.forEach(e => {
+                const link = linkMap.get(e.target.id);
+                if (link && e.isIntersecting) {
+                    document.querySelectorAll('.nav-link.active').forEach(l => l.classList.remove('active'));
+                    link.classList.add('active');
+                }
+            });
+        }, { rootMargin: '-30% 0px -60% 0px' });
+        sections.forEach(s => spy.observe(s));
+
+        // ---- Footer year ----
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
